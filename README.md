@@ -1,69 +1,35 @@
-# React + TypeScript + Vite
+# Сетевая модель «дуга–работа»
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Выполнено на typescript + react + vite
 
-Currently, two official plugins are available:
+## ⚡ Требования
+Перед запуском убедитесь, что у вас установлены:
+- [Node.js](https://nodejs.org/) (рекомендуется версия **18+**)
+- [npm](https://www.npmjs.com/) или [yarn](https://yarnpkg.com/) / [pnpm](https://pnpm.io/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Установка зависимостей
+Склонируйте репозиторий и установите зависимости:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/your-username/your-project.git
+cd your-project
+npm install
+# или
+yarn install
+# или
+pnpm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💪 Возможности
+•	Принимает csv файл с id входов и выходов и длительности процессов между ними.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+•	Отображает данные файла в таблице и визуализирует на графике.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+•	Находит критический путь и общую длительность проекта.
+
+•	Таблица результатов резервов времени.
+
+## 🏆 Результат
+<img width="1910" height="933" alt="2025-09-17_14-07-54" src="https://github.com/user-attachments/assets/c63465a6-0e07-43d4-8b42-eb90773ebccd" />
+<img width="1910" height="933" alt="2025-09-17_14-08-13" src="https://github.com/user-attachments/assets/e7dbe219-dbde-4348-b9bc-1f4fa7efe523" />
+<img width="1910" height="933" alt="2025-09-17_14-08-38" src="https://github.com/user-attachments/assets/76e1842f-4977-4e0e-8316-2498059a947c" />

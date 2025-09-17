@@ -1,0 +1,126 @@
+.network-model-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.network-model-title {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.network-model-section {
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.network-model-section h3 {
+    color: white;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+}
+
+.network-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.network-table th {
+    background: #2c3e50;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.network-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.network-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.network-table tr:hover {
+    background-color: #648bb3;
+}
+
+.critical-row {
+    background-color: #ffebee !important;
+    font-weight: 600;
+}
+
+.critical-row:hover {
+    background-color: #ffcdd2 !important;
+}
+
+.critical-path {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.project-duration {
+    background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.sub-header-row th {
+    background: #2c3e50;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .network-model-container {
+        padding: 10px;
+    }
+
+    .network-table {
+        font-size: 12px;
+    }
+
+    .network-table th,
+    .network-table td {
+        padding: 6px;
+    }
+
+    .network-model-section {
+        padding: 15px;
+    }
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.error {
+    background: #ffebee;
+    color: #c62828;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ef5350;
+}
